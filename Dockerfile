@@ -1,8 +1,8 @@
 FROM alpine:edge
 
 RUN set -x \
-    && addgroup -g 82 -S www-data \
-    && adduser -u 82 -D -S -G www-data www-data \
+    && addgroup -g 33 -S www-data \
+    && adduser -u 33 -D -S -G www-data www-data \
     && apk --no-cache add \
            php7-dom \
            php7-ctype \
