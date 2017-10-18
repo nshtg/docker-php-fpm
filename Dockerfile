@@ -3,11 +3,13 @@ FROM alpine:edge
 RUN set -x \
     && apk --no-cache add \
            php7-dom \
+           php7-curl \
            php7-ctype \
            php7-fpm \
            php7-gd \
            php7-iconv \
            php7-json \
+           php7-mbstring \
            php7-mysqli \
            php7-xml \
            php7-xmlreader \
