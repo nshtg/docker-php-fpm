@@ -11,6 +11,7 @@ RUN set -x \
            php7-json \
            php7-mbstring \
            php7-mysqli \
+           php7-session \
            php7-xml \
            php7-xmlreader \
            php7-xmlwriter \
