@@ -49,4 +49,4 @@ COPY rootfs /
 
 EXPOSE 9000
 
-CMD ["php-fpm7", "-F"]
+CMD ["php-fpm", "-F"]
