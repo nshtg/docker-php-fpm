@@ -6,6 +6,7 @@ RUN apk --no-cache --update add                                                 
     curl-dev                                                                                       \
     libpng-dev                                                                                     \
     libjpeg-turbo-dev                                                                              \
+    libsodium-dev                                                                                  \
     freetype-dev &&                                                                                \
     rm -rf /tmp/* &&                                                                               \
     rm -rf /var/cache/apk/* &&                                                                     \
@@ -22,6 +23,7 @@ RUN apk --no-cache --update add                                                 
     docker-php-ext-configure pdo_sqlite &&                                                         \
     docker-php-ext-configure session &&                                                            \
     docker-php-ext-configure simplexml &&                                                          \
+    docker-php-ext-configure sodium &&                                                             \
     docker-php-ext-configure tokenizer &&                                                          \
     docker-php-ext-configure xml &&                                                                \
     docker-php-ext-configure zip &&                                                                \
@@ -38,6 +40,7 @@ RUN apk --no-cache --update add                                                 
                            pdo_sqlite                                                              \
                            session                                                                 \
                            simplexml                                                               \
+                           sodium                                                                  \
                            tokenizer                                                               \
                            xml                                                                     \
                            zip
